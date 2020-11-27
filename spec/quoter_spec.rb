@@ -1,1 +1,1 @@
-require_relative "../lin/quotes"
+require_relative "../lib/quotes"
