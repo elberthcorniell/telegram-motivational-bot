@@ -1,7 +1,6 @@
 # rubocop:disable Metrics/CyclomaticComplexity
 # rubocop:disable Layout/LineLength
 # rubocop:disable Lint/ReturnInVoidContext
-# rubocop:disable Style/OptionalBooleanParameter
 # rubocop:disable Metrics/MethodLength
 # rubocop:disable Style/ClassVars
 
@@ -78,6 +77,5 @@ end
 # rubocop:enable Metrics/CyclomaticComplexity
 # rubocop:enable Layout/LineLength
 # rubocop:enable Lint/ReturnInVoidContext
-# rubocop:enable Style/OptionalBooleanParameter
 # rubocop:enable Metrics/MethodLength
 # rubocop:enable Style/ClassVars
