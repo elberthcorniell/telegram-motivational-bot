@@ -18,10 +18,6 @@ This project implements Telegram bot using Ruby and the help of some gems like:
 - rspec
 - rubocop
 
-## Live Demo
-
- [Telegram bot]()
-
 ## Built With
 
 - Ruby
@@ -64,24 +60,28 @@ The player who succeeds in placing three of their marks in a horizontal, vertica
 
 ### Usage
 
-- Go into the "tic-tac-toe" directory
+- Go into the "telegram-motivational-bot" directory
 - Execute the "main.rb" file
 
 ```
 ./bin/main.rb
 ```
 
-- Follow the "How to play" instructions
+- Follow the "How to use" instructions
 
-## How to Play
+## How to use
 
-1. The first player (Player 1) will choose their symbol "X" or "O". The remaining symbol will be assigned to the other player (Player 2);
-2. Enter Player 1's name;
-3. Enter Player 2's name;
-4. Starting with Player 1, turn after turn, each player will type a number (1 to 9) corresponding to their desired movement;
-5. The players continue making movements until one of them get three of their marks in a horizontal, vertical, or diagonal row;
-6. If no player gets three of their marks in a row after all the board's spots are marked, the game ends in a draw.
+To use the bot you can use one of the next commands:
 
+/start - Starts the bot and gets you subscribed to a daily motivational quote.
+/quote - Gives you a random quote to improve your motivation level.
+/stop - Stops the subscription.
+
+### Default bot
+
+If you used the default configurations the bot should be running here:
+
+ [Telegram bot](https://t.me/motivatonal_bot)
 
 ### Testing methods
 
