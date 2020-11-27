@@ -14,6 +14,9 @@ This project implements Telegram bot using Ruby and the help of some gems like:
 - telegram-bot-ruby
 - json
 - net-http-persistent
+- whenever
+- rspec
+- rubocop
 
 ## Live Demo
 
