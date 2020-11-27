@@ -24,13 +24,16 @@ class TelegramBot
                     i'll send you a motivational quote everyday. if you want a quote just ask for it typing \"/quote\". 
                     Else if you feel your motivation will never go down and don'\t need me anymore you can type \"/stop\" 
                     and I will understand you.")
+                when '/quote'
+                    quote = @@quoter.get
+                    bot.api.send_message(chat_id: message.chat.id, text: "\"#{quote.text}\"\nAuthor: #{quote.author}")
+                when '/stop'
+                    end_subscription message.chat.id
+                    bot.api.send_message(chat_id: message.chat.id, text: "Good bye my friend!\n If you need me again hust type \"/start\"")
+                else
+                    bot.api.send_message(chat_id: message.chat.id, text: "I just recognize \"/start\", \"/quote\" and \"/stop\" commands")
                 end
-            when '/quote'
-                bot.api.send_message(chat_id: message.chat.id, text: "\"#{quote.text}\"\nAuthor: #{quote.author}")
-            end
-            end
           end
-
     end
 
     def broadcast
