@@ -26,12 +26,6 @@ This project implements Telegram bot using Ruby and the help of some gems like:
 - Ruby
 - Visual Studio, Git & GitHub
 
-## About Tic-tac-toe
-
-Tic-tac-toe is a game for two players, "X" and "O", who take turns marking the spaces in a 3×3 grid.
-
-The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
-
 ## Getting Started
 
 ### Prerequisites
@@ -44,13 +38,13 @@ The player who succeeds in placing three of their marks in a horizontal, vertica
 
 - Register on Telegram.
 - Search for Bot father.
-- Type ```/new bot``` in the chat and follow the instructions.
+- Type `/new bot` in the chat and follow the instructions.
 
 ### Setup
 
 - Clone or download this repository
 - If necessary, unzip the downloaded directory
-- Replace the "Telegram_Bot_API" value in lib/config.json with your API key.
+- Replace the "Telegram_Bot_API" value in `config.json` with your API key.
 (You can use this one "1482669218:AAF_7ftT-eZPq_OetvSRzq3r5jyYngXnZ04")
     ```
         {
@@ -71,6 +65,7 @@ The player who succeeds in placing three of their marks in a horizontal, vertica
 ./bin/main.rb
 ```
 - Your bot is now runing
+- Go to the bot chat in Telegram (bot for given API key: @motivatonal_bot)
 - Follow the "How to use" instructions
 
 ## How to use
