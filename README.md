@@ -103,18 +103,16 @@ rspec
 - LinkedIn: [Elbert Corniell](https://www.linkedin.com/in/elbert-corniell-989183159/)
 
 
-👨‍💻 **Breno Xavier**
-
-- GitHub: [@brenoxav](https://github.com/brenoxav)
-- Twitter: [@brenoxav](https://twitter.com/brenoxav)
-- LinkedIn: [Breno Xavier](https://www.linkedin.com/in/brenoxav)
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/brenoxav/tic-tac-toe/issues).
+Feel free to check the [issues page](https://github.com/elberthcorniell/telegram-motivational-bot/issues).
+
+
+## Thank's to
+
+- [Free motivational quotes API](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373)
 
 
 ## Show your support
