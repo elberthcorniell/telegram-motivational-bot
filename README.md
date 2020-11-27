@@ -8,11 +8,11 @@ A Telegram bot to send motivational quotes everyday or whenever you need one
 
 ## Bot chat expample
 
-![Screenshot of testing](chat.jpeg)
+![Screenshot of testing](.github/chat.jpeg)
 
 ## About the Project
 
-This project implements Telegram bot using Ruby and the help of some gems like:
+Everyday is a new challenge and sometimes a we are not ready for it, for me, a motivational quote can help a lot, that's why I did this project. In this project implements Telegram bot using Ruby and the help of some gems like:
 
 - telegram-bot-ruby
 - json
@@ -84,7 +84,7 @@ If you used the give API key the bot should be running here:
 
 ### Testing methods
 
-![Screenshot of testing](capture.png)
+![Screenshot of testing](.github/capture.png)
 
 For testing please escute the next steps:
 

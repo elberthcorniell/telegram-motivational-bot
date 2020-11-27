@@ -1,21 +1,20 @@
-# rubocop:disable Metrics/CyclomaticComplexity
 # rubocop:disable Layout/LineLength
-# rubocop:disable Lint/ReturnInVoidContext
 # rubocop:disable Metrics/MethodLength
-# rubocop:disable Style/ClassVars
+# rubocop:disable Metrics/CyclomaticComplexity
+# rubocop:disable Lint/ReturnInVoidContext
 
 require_relative './quotes'
 require 'telegram/bot'
 require 'json'
 
 class TelegramBot
-  attr_reader :chats
+  attr_reader :chats, :quoter
 
   @token = nil
 
-  def initialize(default_chats = [], testing = false)
-    @@quoter = Quotes.new
+  def initialize(default_chats = [], testing: false)
     @chats = default_chats
+    @quoter = Quotes.new
     file = File.read('./config.json')
     data = JSON.parse(file)
     @token = data['telegram_bot_api']
@@ -34,7 +33,7 @@ class TelegramBot
           chats.push(message.chat.id) if chats.none? message.chat.id
           bot.api.send_message(chat_id: message.chat.id, text: text)
         when '/quote'
-          quote = @@quoter.get
+          quote = @quoter.get
           bot.api.send_message(chat_id: message.chat.id, text: "#{quote['text']}\ \n- #{quote['author']}")
         when '/stop'
           end_subscription message.chat.id if subscribed? message.chat.id
@@ -46,10 +45,12 @@ class TelegramBot
     end
   end
 
+  private
+
   def broadcast
     raise ArgumentError if chats.empty?
 
-    quote = @@quoter.get
+    quote = @quoter.get
     Telegram::Bot::Client.run(@token) do |bot|
       chats.each do |id|
         yield(id) if block_given?
@@ -74,8 +75,7 @@ class TelegramBot
   end
 end
 
-# rubocop:enable Metrics/CyclomaticComplexity
 # rubocop:enable Layout/LineLength
-# rubocop:enable Lint/ReturnInVoidContext
 # rubocop:enable Metrics/MethodLength
-# rubocop:enable Style/ClassVars
+# rubocop:enable Metrics/CyclomaticComplexity
+# rubocop:enable Lint/ReturnInVoidContext
