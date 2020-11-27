@@ -2,14 +2,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-# Tic-tac-toe
+# Telegram Motivational Bot
 
-The classic tic-tac-toe game to be played in your terminal.
+A Telegram bot to send motivational quotes everyday or whenever you need one
 
 
 ## About the Project
 
-This project implements the tic-tac-toe game using object-oriented Ruby.
+This project implements Telegram bot using Ruby and the help of some gems like:
+
+- telegram-bot-ruby
+- json
+- net-http-persistent
 
 ## Built With
 
@@ -28,11 +32,28 @@ The player who succeeds in placing three of their marks in a horizontal, vertica
 
 - Ruby
 - A terminal
+- Telegram bot API key
+
+#### How to get a Telegram API key
+
+- Register on Telegram.
+- Search for Bot father.
+- Type ```/new bot``` in the chat and follow the instructions.
 
 ### Setup
 
 - Clone or download this repository
 - If necessary, unzip the downloaded directory
+- Replace the "Telegram_Bot_API" value in lib/config.json with your API key.
+    ```
+        {
+            "telegram_bot_api": "YOUR API KEY HERE"
+        }
+    ```
+- Run:
+    ```
+        bundle install
+    ```
 
 ### Usage
 
