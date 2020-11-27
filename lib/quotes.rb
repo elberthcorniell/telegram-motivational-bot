@@ -6,7 +6,7 @@ require 'net/http'
 require 'json'
 
 class Quotes
-    @url = nil
+    attr_reader :url
     def initialize
         file = File.read('./config.json')
         data = JSON.parse(file)
