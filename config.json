@@ -1,3 +1,4 @@
 {
-    "telegram_bot_api": "YOUR API KEY HERE"
+    "telegram_bot_api": "YOUR API KEY HERE",
+    "quotes_api_route": "https://type.fit/api/quotes"
 }
