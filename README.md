@@ -6,6 +6,9 @@
 
 A Telegram bot to send motivational quotes everyday or whenever you need one
 
+## Bot chat expample
+
+![Screenshot of testing](chat.jpeg)
 
 ## About the Project
 
@@ -48,6 +51,7 @@ The player who succeeds in placing three of their marks in a horizontal, vertica
 - Clone or download this repository
 - If necessary, unzip the downloaded directory
 - Replace the "Telegram_Bot_API" value in lib/config.json with your API key.
+(You can use this one "1482669218:AAF_7ftT-eZPq_OetvSRzq3r5jyYngXnZ04")
     ```
         {
             "telegram_bot_api": "YOUR API KEY HERE"
@@ -66,7 +70,7 @@ The player who succeeds in placing three of their marks in a horizontal, vertica
 ```
 ./bin/main.rb
 ```
-
+- Your bot is now runing
 - Follow the "How to use" instructions
 
 ## How to use
@@ -79,7 +83,7 @@ To use the bot you can use one of the next commands:
 
 ### Default bot
 
-If you used the default configurations the bot should be running here:
+If you used the give API key the bot should be running here:
 
  [Telegram bot](https://t.me/motivatonal_bot)
 
