@@ -45,7 +45,7 @@ This project implements Telegram bot using Ruby and the help of some gems like:
 - Clone or download this repository
 - If necessary, unzip the downloaded directory
 - Replace the "Telegram_Bot_API" value in `config.json` with your API key.
-(You can use this one "1482669218:AAF_7ftT-eZPq_OetvSRzq3r5jyYngXnZ04")
+(You can use the default one )
     ```
         {
             "telegram_bot_api": "YOUR API KEY HERE"
